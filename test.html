@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Position Types - Responsive</title>
+
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: white;
+  }
+
+  .box {
+    padding: 15px;
+    margin: 15px;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 0 0 10px black;
+  }
+
+  .sticky-box { 
+    position: sticky;
+    top: 0;
+    background: blue;
+    text-align: center;
+    padding: 12px;
+  }
+
+  .static-box {
+    position: static;
+    background: yellow;
+  }
+
+  .relative-box {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    background: rgb(14, 113, 134);
+  }
+
+  .absolute-container {
+    position: relative;
+    background: red;
+    padding: 40px;
+    min-height: 120px;
+  }
+
+  .absolute-box {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: orange;
+    padding: 10px;
+    color: black;
+  }
+
+  .fixed-box {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background: grey;
+    padding: 10px 15px;
+    border-radius: 20px;
+  }
+
+ 
+  @media (max-width: 900px) {
+
+    body {
+      background: bisque;
+    }
+
+    .sticky-box {
+      background: green;
+    }
+
+    .static-box {
+      background: violet;
+    }
+
+    .relative-box {
+      background: aqua;
+    }
+
+    .absolute-container {
+      background: crimson;
+    }
+
+    .fixed-box {
+      background: orange;
+    }
+
+    .absolute-box{
+      background: white;
+    }
+  }
+</style>
+</head>
+
+<body>
+
+<div class="sticky-box box">
+  Sticky Header (Sticks on Scroll)
+</div>
+
+<div class="static-box box">
+  Static Position (Default)
+</div>
+
+<div class="relative-box box">
+  Relative Position
+</div>
+
+<div class="absolute-container box">
+  Absolute Container
+  <div class="absolute-box">
+    Absolute Box
+  </div>
+</div>
+
+<div class="fixed-box">
+  Fixed Button
+</div>
+
+</body>
+</html>

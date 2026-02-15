@@ -1,0 +1,77 @@
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 8px;
+} 
+nav{
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+   
+}
+
+body {
+    font-family: Arial;
+    background-color: bisque;
+}
+
+nav a:hover{
+    color: rgb(177, 174, 174)
+}
+
+
+h3 {
+  font-size: 22px;
+  margin:auto
+}
+
+ul li {
+  padding: 5px;
+  font-size: 16px;
+}
+
+main:hover, aside:hover {
+  transform: scale(1.01);
+  transition: 0.4s;
+}
+
+main, aside {
+      width: 60%;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+    } 
+
+  
+    footer {
+      text-align: center;
+      background:white  ;
+      padding: 5px;
+      margin-top: 20px;
+      border-radius: 20px;
+    }
+
+img{
+  height: 120px;
+  border-radius: 50%;
+}
+
+/*MOBILE RESPONSIVE PART */
+@media (max-width: 768px) {
+
+  main, aside {
+    width: 95%;
+    padding: 15px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  img {
+    height: 100px;
+  }
+
+}
